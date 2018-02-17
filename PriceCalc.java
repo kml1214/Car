@@ -1,7 +1,5 @@
 public interface PriceCalc{
 	
-	int calculatePrice();
-
-
+	double calculatePrice();
 
 }

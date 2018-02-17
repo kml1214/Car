@@ -1,12 +1,13 @@
-public class Coupe extends Car implements priceCalc {
+public class Coupe extends Car implements PriceCalc {
 
 	private int initPrice; // initial price
 	private double price; // price value of car
 	private int priceLimit; // lowest that price can go 
+
+	private static Car x = new Car();
 	
 	public static void main(String[] args)
 	{
-		Car x = new Car();
 		x.calcInitPrice();
 		x.calculatePrice();
 	}
@@ -45,7 +46,7 @@ public class Coupe extends Car implements priceCalc {
 		}
 	}
 
-	public int calculatePrice()
+	public double calculatePrice()
 	{
 		double yearDeduction = (2018 - x.getYear())*0.7;
 		double mileDeduction = x.getMileage()*0.01;

@@ -10,7 +10,7 @@ public class Car{
 		mileage = 0;
 	}
 
-	public int getBrand()
+	public String getBrand()
 	{
 		return brand;
 	}
